@@ -1,0 +1,14 @@
+{
+  "name": "vaibrasil",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Leao <eu@luisleao.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "ntwitter": "^0.5.0"
+  }
+}
