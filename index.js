@@ -13,21 +13,18 @@ var sys = require('sys')
 var exec = require('child_process').exec;
 
 
+var config = require('./config.json');
 
-var twit = new twitter({
-  consumer_key: 'buvfmHsnrBEB0bdEFmzQ',
-  consumer_secret: 'qyjMf7SecpDuRxSq2HRIUGypCVZPRWLkLZ3wbqbK4c',
-  access_token_key: '10095682-PwWFAw3DpukQs9T0aC6sWtRJrb2EeuSDG6u1mjeHW',
-  access_token_secret: '6L5spqmk4DHCKDSqHZDw23u3nopN95bZydEWYyz63NCpM'
-});
 
-console.log("ENTREI");
+var twit = new twitter(config);
+
+console.log("OK");
 
 
 
 
 var fala = function(){
-	exec("afplay fala.mp3 -r 0.8", null);
+	exec("afplay fala.mp3 -r 0.9", null);
 	if (tmr_fala) clearTimeout(tmr_fala);
 	tmr_fala = setTimeout(fala, TEMPO * 60000);
 }
